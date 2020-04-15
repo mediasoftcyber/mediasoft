@@ -1,0 +1,183 @@
+2020-04-13 02:09:45.314  INFO 12788 --- [main] com.redojet.RedojetApiApplication        : Starting RedojetApiApplication on DESKTOP-S7VLSUA with PID 12788 (D:\MediaSoft\RedojetAPI\target\classes started by prabhakar in D:\MediaSoft\RedojetAPI)
+2020-04-13 02:09:45.316 DEBUG 12788 --- [main] com.redojet.RedojetApiApplication        : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-13 02:09:45.317  INFO 12788 --- [main] com.redojet.RedojetApiApplication        : No active profile set, falling back to default profiles: default
+2020-04-13 02:09:45.870  INFO 12788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-04-13 02:09:45.916  INFO 12788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42ms. Found 4 MongoDB repository interfaces.
+2020-04-13 02:09:46.413  INFO 12788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8010 (http)
+2020-04-13 02:09:46.421  INFO 12788 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-13 02:09:46.421  INFO 12788 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-13 02:09:46.480  INFO 12788 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-13 02:09:46.480  INFO 12788 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1134 ms
+2020-04-13 02:09:46.524  WARN 12788 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.redojet.user.service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-04-13 02:09:46.527  INFO 12788 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-04-13 02:09:46.537  INFO 12788 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-13 02:09:46.606 ERROR 12788 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userService in com.redojet.user.controller.UserController required a bean of type 'com.redojet.user.service.UserService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.redojet.user.service.UserService' in your configuration.
+
+2020-04-13 02:11:57.991  INFO 3216 --- [main] com.redojet.RedojetApiApplication        : Starting RedojetApiApplication on DESKTOP-S7VLSUA with PID 3216 (D:\MediaSoft\RedojetAPI\target\classes started by prabhakar in D:\MediaSoft\RedojetAPI)
+2020-04-13 02:11:57.993 DEBUG 3216 --- [main] com.redojet.RedojetApiApplication        : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-13 02:11:57.993  INFO 3216 --- [main] com.redojet.RedojetApiApplication        : No active profile set, falling back to default profiles: default
+2020-04-13 02:11:58.573  INFO 3216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-04-13 02:11:58.620  INFO 3216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43ms. Found 4 MongoDB repository interfaces.
+2020-04-13 02:11:59.115  INFO 3216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8010 (http)
+2020-04-13 02:11:59.122  INFO 3216 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-13 02:11:59.123  INFO 3216 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-13 02:11:59.178  INFO 3216 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-13 02:11:59.178  INFO 3216 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1149 ms
+2020-04-13 02:11:59.537  INFO 3216 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-04-13 02:11:59.538  INFO 3216 --- [main] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2020-04-13 02:11:59.579  INFO 3216 --- [cluster-ClusterId{value='5e937d174534196729a2be21', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:3491}] to localhost:27017
+2020-04-13 02:11:59.582  INFO 3216 --- [cluster-ClusterId{value='5e937d174534196729a2be21', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 5]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2155300}
+2020-04-13 02:11:59.583  INFO 3216 --- [cluster-ClusterId{value='5e937d174534196729a2be21', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2020-04-13 02:12:00.107  INFO 3216 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-13 02:12:00.215  INFO 3216 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 337e9f0d-80b7-42b5-a7c1-ef0a049369a7
+
+2020-04-13 02:12:00.288  INFO 3216 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4519f676, org.springframework.security.web.context.SecurityContextPersistenceFilter@2e463f4, org.springframework.security.web.header.HeaderWriterFilter@5a97b17c, org.springframework.security.web.csrf.CsrfFilter@53c99b09, org.springframework.security.web.authentication.logout.LogoutFilter@6361b799, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@991cbde, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1a07bf6, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@78ec89a6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3b332962, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36ab3814, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e79d43, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3596b249, org.springframework.security.web.session.SessionManagementFilter@71cea1b8, org.springframework.security.web.access.ExceptionTranslationFilter@77c1e611, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1cd43562]
+2020-04-13 02:12:00.310  INFO 3216 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-04-13 02:12:00.322  INFO 3216 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-04-13 02:12:00.331  INFO 3216 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-04-13 02:12:00.441  INFO 3216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8010 (http) with context path ''
+2020-04-13 02:12:00.443  INFO 3216 --- [main] com.redojet.RedojetApiApplication        : Started RedojetApiApplication in 2.718 seconds (JVM running for 3.019)
+2020-04-13 02:15:49.431  INFO 3216 --- [http-nio-8010-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-13 02:15:49.431  INFO 3216 --- [http-nio-8010-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-13 02:15:49.436  INFO 3216 --- [http-nio-8010-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2020-04-13 02:20:56.507 ERROR 3216 --- [http-nio-8010-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+org.springframework.security.web.firewall.RequestRejectedException: The request was rejected because the URL contained a potentially malicious String "//"
+	at org.springframework.security.web.firewall.StrictHttpFirewall.rejectedBlacklistedUrls(StrictHttpFirewall.java:369) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.firewall.StrictHttpFirewall.getFirewalledRequest(StrictHttpFirewall.java:336) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:194) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_191]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_191]
+
+2020-04-13 02:24:41.874  INFO 10824 --- [main] com.redojet.RedojetApiApplication        : Starting RedojetApiApplication on DESKTOP-S7VLSUA with PID 10824 (D:\MediaSoft\RedojetAPI\target\classes started by prabhakar in D:\MediaSoft\RedojetAPI)
+2020-04-13 02:24:41.876 DEBUG 10824 --- [main] com.redojet.RedojetApiApplication        : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-13 02:24:41.876  INFO 10824 --- [main] com.redojet.RedojetApiApplication        : No active profile set, falling back to default profiles: default
+2020-04-13 02:24:42.442  INFO 10824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-04-13 02:24:42.487  INFO 10824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41ms. Found 4 MongoDB repository interfaces.
+2020-04-13 02:24:42.977  INFO 10824 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8010 (http)
+2020-04-13 02:24:42.984  INFO 10824 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-13 02:24:42.985  INFO 10824 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-13 02:24:43.040  INFO 10824 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-13 02:24:43.040  INFO 10824 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1132 ms
+2020-04-13 02:24:43.392  INFO 10824 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-04-13 02:24:43.392  INFO 10824 --- [main] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2020-04-13 02:24:43.430  INFO 10824 --- [cluster-ClusterId{value='5e938013130091783f0b7331', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:3517}] to localhost:27017
+2020-04-13 02:24:43.433  INFO 10824 --- [cluster-ClusterId{value='5e938013130091783f0b7331', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 5]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1958100}
+2020-04-13 02:24:43.433  INFO 10824 --- [cluster-ClusterId{value='5e938013130091783f0b7331', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2020-04-13 02:24:43.935  INFO 10824 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-13 02:24:44.035  INFO 10824 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 65cf95e1-beaa-4373-95fc-92f23f93ea8a
+
+2020-04-13 02:24:44.093  INFO 10824 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@54c622a7, org.springframework.security.web.context.SecurityContextPersistenceFilter@3408f695, org.springframework.security.web.header.HeaderWriterFilter@3c0e00a8, org.springframework.security.web.csrf.CsrfFilter@59b32539, org.springframework.security.web.authentication.logout.LogoutFilter@53c99b09, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1da4b3f9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@769bd849, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@37348491, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5be052ca, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4dde8976, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2582b0ef, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76e3b45b, org.springframework.security.web.session.SessionManagementFilter@6cd15072, org.springframework.security.web.access.ExceptionTranslationFilter@16ac5d35, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1727e03a]
+2020-04-13 02:24:44.116  INFO 10824 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-04-13 02:24:44.127  INFO 10824 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-04-13 02:24:44.135  INFO 10824 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-04-13 02:24:44.239  INFO 10824 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-04-13 02:24:44.245  INFO 10824 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-13 02:24:44.248 ERROR 10824 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8010 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8010 or configure this application to listen on another port.
+
+2020-04-13 02:24:44.251  INFO 10824 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-13 02:37:53.607  INFO 14584 --- [main] com.redojet.RedojetApiApplication        : Starting RedojetApiApplication on DESKTOP-S7VLSUA with PID 14584 (D:\MediaSoft\RedojetAPI\target\classes started by prabhakar in D:\MediaSoft\RedojetAPI)
+2020-04-13 02:37:53.609 DEBUG 14584 --- [main] com.redojet.RedojetApiApplication        : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2020-04-13 02:37:53.609  INFO 14584 --- [main] com.redojet.RedojetApiApplication        : No active profile set, falling back to default profiles: default
+2020-04-13 02:37:54.153  INFO 14584 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-04-13 02:37:54.199  INFO 14584 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42ms. Found 4 MongoDB repository interfaces.
+2020-04-13 02:37:54.722  INFO 14584 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8010 (http)
+2020-04-13 02:37:54.729  INFO 14584 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-13 02:37:54.730  INFO 14584 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-13 02:37:54.783  INFO 14584 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-13 02:37:54.783  INFO 14584 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1146 ms
+2020-04-13 02:37:55.173  INFO 14584 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-04-13 02:37:55.174  INFO 14584 --- [main] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2020-04-13 02:37:55.211  INFO 14584 --- [cluster-ClusterId{value='5e93832b91939436fb67d57c', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:3543}] to localhost:27017
+2020-04-13 02:37:55.214  INFO 14584 --- [cluster-ClusterId{value='5e93832b91939436fb67d57c', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 5]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2108400}
+2020-04-13 02:37:55.215  INFO 14584 --- [cluster-ClusterId{value='5e93832b91939436fb67d57c', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2020-04-13 02:37:55.717  INFO 14584 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-13 02:37:55.795  INFO 14584 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-04-13 02:37:55.807  INFO 14584 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-04-13 02:37:55.815  INFO 14584 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-04-13 02:37:55.922  INFO 14584 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-04-13 02:37:55.928  INFO 14584 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-13 02:37:55.931 ERROR 14584 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8010 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8010 or configure this application to listen on another port.
+
+2020-04-13 02:37:55.933  INFO 14584 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
